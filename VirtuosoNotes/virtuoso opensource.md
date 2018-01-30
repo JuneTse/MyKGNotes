@@ -4,6 +4,11 @@
 2. 下载：[https://virtuoso.openlinksw.com/dataspace/doc/dav/wiki/Main/VOSDownload][1]
 3. 启动服务：在有virtuoso.ini的目录下，运行命令：virtuoso-t -f
 4. 查看WebUI: http://localhost:8890/sqarql
+5. 配置virtuoso.ini: 
+当数据集很大时，要配置virtuoso使用的系统内存，使用总内存的2/3到3/5之间
+	* NumberOfBuffers     
+	* MaxDirtyBuffers      
+6. 
 
 
 ## 处理Freebase
