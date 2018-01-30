@@ -4,7 +4,7 @@
 
 步骤：
 > * (1) 启动virtuoso服务: 进入`virtuoso.ini`所在的目录，运行: `virtuoso-t -f`命令 
-> * (2) 进入RDF文件所在的目录，运行`isql`命令进入SQL命令界面
+> * (2) 运行`isql`命令进入SQL命令界面
 > * (3)运行命令注册要加载的RDF文件： 
 > > * 不包括子目录： `ld_dir ('<source-filename-or-directory>', '<file name pattern>', 'graph iri');`  
 > > * 包括子目录： `ld_dir_all ('<source-filename-or-directory>', '<file name pattern>', 'graph iri');`
@@ -12,6 +12,8 @@
 > * (4)检查注册的文件列表:`select * from DB.DBA.load_list;`
 > * (5) 加载数据： `rdf_loader_run();`
 > * (6) 在浏览器中输入网址`http://localhost:8890/sparql`, 进入SPARQL终端进行查询
+
+**注意**：RDF文件中每行是一个三元组形式的, 如果object中有空格，要用双引号括起来。
 
 
 ## 2. 使用DB.DBA.TTLP_MT命令
@@ -52,6 +54,6 @@ flags:
 	DB.DBA.TTLP_MT (file_to_string_output ('tmp/users.ttl'), '', 'http://example.com',32);
 步骤：
 > * (1) 启动virtuoso服务: 进入`virtuoso.ini`所在的目录，运行: `virtuoso-t -f`命令 
-> * (2) 进入RDF文件所在的目录，运行`isql`命令进入SQL命令界面
+> * (2) 运行`isql`命令进入SQL命令界面
 > * (3) 运行命令`DB.DBA.TTLP_MT (file_to_string_output ('tmp/users.ttl'), '', 'http://example.com',32);` 加载数据
 > * (4) 在浏览器中输入网址`http://localhost:8890/sparql`, 进入SPARQL终端进行查询
