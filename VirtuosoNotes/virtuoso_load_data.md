@@ -13,7 +13,9 @@
 > * (5) 加载数据： `rdf_loader_run();`
 > * (6) 在浏览器中输入网址`http://localhost:8890/sparql`, 进入SPARQL终端进行查询
 
-**注意**：RDF文件中每行是一个三元组形式的, 如果object中有空格，要用双引号括起来。
+**注意**：
+> * RDF文件中每行是一个三元组形式的, 如果object中有空格，要用双引号括起来。
+> * subject和predicate要用尖括号`<>`括起来
 
 
 ## 2. 使用DB.DBA.TTLP_MT命令
