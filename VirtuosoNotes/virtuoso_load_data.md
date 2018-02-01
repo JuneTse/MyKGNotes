@@ -59,3 +59,8 @@ flags:
 > * (2) 运行`isql`命令进入SQL命令界面
 > * (3) 运行命令`DB.DBA.TTLP_MT (file_to_string_output ('tmp/users.ttl'), '', 'http://example.com',32);` 加载数据
 > * (4) 在浏览器中输入网址`http://localhost:8890/sparql`, 进入SPARQL终端进行查询
+
+## 3. 使用图形界面加载数据
+> * (1) 启动virtuoso服务: 进入`virtuoso.ini`所在的目录，运行: `virtuoso-t -f`命令 
+> * (2) 浏览器中输入： http://localhost:8890/conductor， 并登录(用户名和密码：dba)
+> * (3) 点解Linked Data -->Quad Store Upload 上传文件

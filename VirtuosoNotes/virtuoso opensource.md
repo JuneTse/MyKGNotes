@@ -8,7 +8,9 @@
 当数据集很大时，要配置virtuoso使用的系统内存，使用总内存的2/3到3/5之间
 	* NumberOfBuffers     
 	* MaxDirtyBuffers      
-6. 
+6. 登录管理界面：http://localhost:8890/conductor/
+	* 用户名： dba
+	* 密码： dba
 
 
 ## 处理Freebase
