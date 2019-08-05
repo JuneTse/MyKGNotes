@@ -35,6 +35,9 @@ Freebase中的每个实体都有一个唯一的"id"和一个唯一的"mid". "mid
     * article
     * images
 5. [CVT][6]: Compound Value Type，复合值类型，在freebase里用来表示一条记录由多个域组成，用来表示复杂的数据。
+ 
+ 比如： A<--name-- Mid_A--relation1-->Mid_CVT--relation2-->Mid_B --name-->B
+
 6. [aliases][7]
 7. [notable_types][9]: Freebase的topic可以有很多不同的types。比如，Barack Obama是Person,Pllician,Author,Award Winner等。通常，我们需要知道一个topic最显著的type,最有区分性的type，来区分同名topic。在Freebase Search API中可以通过`filter=(all notable:Politician)`来根据类型过滤。
 8. 
