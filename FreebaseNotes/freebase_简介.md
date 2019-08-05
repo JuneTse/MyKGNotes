@@ -61,6 +61,7 @@ Freebase中的每个实体都有一个唯一的"id"和一个唯一的"mid". "mid
 * name: <http://rdf.freebase.com/ns/type.object.name>
 * alias: <http://rdf.freebase.com/ns/common.topic.alias>
 * 类别： /common/topic/notable_types
+* type: <http://rdf.freebase.com/ns/type.object.type>
 
 
 
