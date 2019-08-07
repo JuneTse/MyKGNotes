@@ -8,7 +8,7 @@
 > * (3)运行命令注册要加载的RDF文件： 
 > > * 不包括子目录： `ld_dir ('<source-filename-or-directory>', '<file name pattern>', 'graph iri');`  
 > > * 包括子目录： `ld_dir_all ('<source-filename-or-directory>', '<file name pattern>', 'graph iri');`
-> > 注意：ld_dir函数中的参数要用单引号，否则会报错
+> > * 注意：ld_dir函数中的参数要用单引号，否则会报错
 
 > * (4)检查注册的文件列表:`select * from DB.DBA.load_list;`
 > * (5) 加载数据： `rdf_loader_run();`
