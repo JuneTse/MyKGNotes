@@ -6,3 +6,12 @@
 
 * https://github.com/maxlath/wikidata-properties-dumper
 * https://stackoverflow.com/questions/25100224/how-to-get-a-list-of-all-wikidata-properties
+
+```SELECT ?property ?propertyLabel WHERE {
+    ?property a wikibase:Property .
+    SERVICE wikibase:label {
+      bd:serviceParam wikibase:language "en" .
+   }
+ }
+
+LIMIT 5```
