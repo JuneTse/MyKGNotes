@@ -41,7 +41,7 @@ SELECT ?lemma ?item WHERE {
 ```
 
 ### 查询实体的label
-
+* SPARQL查询
 ```
 SELECT DISTINCT * WHERE {
   wd:Q7883956 rdfs:label ?label . 
@@ -49,3 +49,8 @@ SELECT DISTINCT * WHERE {
 }
 
 ```
+* API查询
+https://www.wikidata.org/w/api.php?action=wbgetentities&ids=Q7883956&languages=en
+
+
+
