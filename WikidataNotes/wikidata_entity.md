@@ -39,3 +39,13 @@ SELECT ?lemma ?item WHERE {
     schema:name ?lemma.
 }
 ```
+
+### 查询实体的label
+
+```
+SELECT DISTINCT * WHERE {
+  wd:Q7883956 rdfs:label ?label . 
+  FILTER (langMatches( lang(?label), "en" ) )  
+}
+
+```
